@@ -118,15 +118,14 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 
 .page-content .company{
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
 .page-content .company .container{
-    position: absolute;
     background-color: #084d828e;
-    top: 0;
+    background-image: linear-gradient(to right, #084d82af, #084d82af),url(../img/business.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25%;
     padding: 126px 674px;
 }
 
@@ -331,7 +330,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 .page-content .callback .container .wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 80px;
+    padding: 60px;
 
 }
 
@@ -372,7 +371,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     margin: 10px 10px;
     border: 2px solid rgba(33, 33, 33, 0);
     outline: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color .2s;
 }
 
 .page-content .callback .container select{
@@ -384,7 +383,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     border: 2px solid rgba(33, 33, 33, 0);
     outline: none;
     color: grey;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color .2s;
 }
 
 .page-content .callback .container input:focus-within{
@@ -484,6 +483,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     background-color: #084d82c1;
     opacity: 100%;
     transition: .2s;
+    overflow:hidden;
 }
 
 .page-content .projects .container-grid .wrapper .cell .box:hover{
@@ -524,50 +524,30 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 /*.......................Статистика.......................*/
 
 .page-content .statistics{
-    background-color: #084d82de;
-    position: relative;
+    background-image: linear-gradient(to right, #084d82c1, #084d82c1),url(../img/business-management-live.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 55%;
+
 }
 
-.page-content .statistics .container{
-    background-color: #084d82de;
-    position: absolute;
-    top: 0px;
-}
-
-.page-content .statistics .container .cell{
+.page-content .statistics .cell{
     display: inline-block;
-    justify-content: center;
-    align-content: center;
+    padding: 50px 0;
 }
 
-.page-content .statistics .container .wrapper{
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 352px;
-}
-
-.page-content .statistics img{
-    width: 1905px;
-    height: 200px;
-    object-fit: cover;
-    opacity: 100%;
-}
-
-.page-content .statistics .container .number{
+.page-content .statistics .number{
     color: #efefef;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
     padding: 0px;
-    z-index: 1;
 }
 
-.page-content .statistics .container .text{
+.page-content .statistics .text{
     color: #efefef;
     text-align: center;
     font-size: 25px;
-    padding: 5px;
-    z-index: 30;
 }
 
 /*..................Последние новости..................*/
@@ -726,93 +706,89 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 
 .page-content .testimonials {
     padding: 40px 0;
-    background-color: #ffffff;
-    position: relative;
+    justify-self: center;
 }
 
 .page-content .testimonials .container{
     background-color: #084d828e;
-    display: flex;
+    display: inline-block;
     text-align: center;
     padding: 40px;
-    position: absolute;
-    top: 40px;
-    padding: 59px 352px;
+    background-image: linear-gradient(to right, #084d82c1, #084d82c1),url(../img/handshake.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25%;
 }
 
-.page-content .testimonials .container .wrapper p{
+.page-content .testimonials .container p{
     color: #ffffff;
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 7px;
 }
 
-.page-content .testimonials .container .wrapper .bottom-line{
+.page-content .testimonials .container .bottom-line{
     background-color: #ffffff;
 }
 
-.page-content .testimonials .container-grid .wrapper{
+.page-content .testimonials .container-grid{
     display: flex;
     align-items: center;
     padding-top: 45px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.page-content .testimonials img{
-    width: 1905px;
-    height: 500px;
-    object-fit: cover;
-}
-
-.page-content .testimonials .container .wrapper img{
+.page-content .testimonials .container img{
     width: 150px;
     height: 150px;
 }
 
-.page-content .testimonials .container .wrapper .cell-left img{
+.page-content .testimonials .container .cell-left img{
     padding: 50px 0;
     padding-right: 20px;
 }
 
-.page-content .testimonials .container .wrapper .cell-left{
+.page-content .testimonials .container .cell-left{
     width: 580px;
     border: 1px solid #a3a3a3;
     display: flex;
     text-align: left;
+    margin-right: 20px;
 }
 
-.page-content .testimonials .container .wrapper .cell-right img{
+.page-content .testimonials .container .cell-right img{
     padding: 50px 0;
     padding-left: 20px;
     float: right;
 }
 
-.page-content .testimonials .container .wrapper .cell-right{
+.page-content .testimonials .container .cell-right{
     width: 580px;
     border: 1px solid #a3a3a3;
     text-align: right;
+    margin-left: 20px;
 }
 
-.page-content .testimonials .container .wrapper .cell{
+.page-content .testimonials .container .cell{
     padding-top: 25px;
     display: block;
 }
 
-.page-content .testimonials .container .wrapper .cell .name{
+.page-content .testimonials .container .cell .name{
     font-size: 21px;
 }
 
-.page-content .testimonials .container .wrapper .cell .occupation{
+.page-content .testimonials .container .cell .occupation{
     font-size: 18px;
     font-weight: 400;
 }
 
-.page-content .testimonials .container .wrapper .cell .text{
+.page-content .testimonials .container .cell .text{
     font-size: 20px;
     font-weight: 400;
 }
 
-.page-content .testimonials .container .wrapper .page-switcher{
+.page-content .testimonials .container .page-slider{
     padding-top: 40px;
     width: 150px;
     display: flex;
@@ -820,21 +796,21 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     margin: auto;
 }
 
-.page-content .testimonials .container .wrapper .page-switcher .box{
+.page-content .testimonials .container .page-slider .box{
     background-color: #ffffff;
     width: 40px;
     height: 5px;
     transition: .2s;
 }
 
-.page-content .testimonials .container .wrapper .page-switcher .box.active{
+.page-content .testimonials .container .page-slider .box.active{
     background-color: #00d28c;
     width: 40px;
     height: 5px;
     transition: .2s;
 }
 
-.page-content .testimonials .container .wrapper .page-switcher .box:hover{
+.page-content .testimonials .container .page-slider .box:hover{
     cursor: pointer;
     background-color: #00d28c;
     transition: .2s;
@@ -904,6 +880,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     border:transparent;
     color: #ffffff;
     transition:.1s;
+    cursor: pointer;
 }
 
 .page-content .sign-up .container-grid .wrapper button:active{
@@ -914,22 +891,23 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 }
 
 /*.......................Футер......................*/
+.page-footer{
+    position: relative;
+    background-image: linear-gradient(to right, #084d82c1, #084d82c1), url(../img/79015AB87FD6D3284472876E1ACC3428.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25%;
+}
 
-.page-footer .page-footer-image{
-    width: 1905px;
-    height: 400px;
+.page-footer-image{
+    width: 100%;
     object-fit: cover;
 }
 
-.page-footer{
-    position: relative;
-}
-
 .page-footer .container{
-    background-color: #084d82de;
-    position: absolute;
-    padding: 36px 352px;
-    top: 0;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
 }
 
 .page-footer .container p{
@@ -946,91 +924,85 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     color: #fff;
 }
 
-.page-footer .container .wrapper .container-box{
-    display: flex;
-    padding-top: 40px;
-    justify-content: space-between;
-}
-
-.page-footer .container .wrapper .container-box .info{
+.page-footer .container .info{
     display: inline-block;
     align-items: center;
 }
 
-.page-footer .container .wrapper .container-box .info .company a{
+.page-footer .container .info .company a{
     display: flex;
     align-items: center;
 }
 
-.page-footer .container .wrapper .container-box .info .company .logo{
+.page-footer .container .info .company .logo{
     width: 50px;
     padding-right: 15px;
 }
 
-.page-footer .container .wrapper .container-box .info .company .name{
+.page-footer .container .info .company .name{
     width: 150px;
 }
 
-.page-footer .container .wrapper .container-box .info .purpose{
+.page-footer .container .info .purpose{
     width: 310px;
     padding: 15px 0;
 }
 
-.page-footer .container .wrapper .container-box .info .purpose p{
+.page-footer .container .info .purpose p{
     font-size: 17px;
 }
 
-.page-footer .container .wrapper .container-box .contact-us{
+.page-footer .container .contact-us{
     padding: 23px 0;
     width: 300px;
 }
 
-.page-footer .container .wrapper .container-box .contact-us a{
+.page-footer .container .contact-us a{
     transition: .2s;
 }
 
-.page-footer .container .wrapper .container-box .contact-us a:hover{
+.page-footer .container .contact-us a:hover{
     color: #15c38c;
     transition: .2s;
 }
 
-.page-footer .container .wrapper .container-box .company-pages{
+.page-footer .container .company-pages{
     padding: 23px 0;
 }
 
-.page-footer .container .wrapper .container-box .company-pages a{
+.page-footer .container .company-pages a{
     transition: .2s;
 }
 
-.page-footer .container .wrapper .container-box .company-pages a:hover{
+.page-footer .container .company-pages a:hover{
     color: #15c38c;
     transition: .2s;
 }
 
-.page-footer .container .wrapper .container-box .gallery{
+.page-footer .container .gallery{
     padding: 23px 0;
 }
 
-.page-footer .container .wrapper .container-box .contact-us h1{
+.page-footer .container .contact-us h1{
     padding-bottom: 10px;
 }
 
-.page-footer .container .wrapper .container-box .contact-us ul li{
+.page-footer .container .contact-us ul li{
     display: flex;
     padding: 10px 0;
     align-items: center;
 }
 
-.page-footer .container .wrapper .container-box .contact-us img{
+.page-footer .container .contact-us img{
     width: 20px;
     padding-right: 10px;
 }
 
-.page-footer .container .wrapper .container-box .company-pages{
+.page-footer .container .company-pages{
     width: 270px;
 }
 
-.page-footer .container .wrapper .container-box .company-pages ul{
+.page-footer .container .company-pages ul{
     padding-top: 15px;
     display: flex;
     flex-direction: column;
@@ -1038,7 +1010,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     height: 200px;
 }
 
-.page-footer .container .wrapper .container-box .company-pages ul li{
+.page-footer .container .company-pages ul li{
     display: flex;
     align-items: center;
     padding-bottom: 20px;
@@ -1047,18 +1019,18 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     
 }
 
-.page-footer .container .wrapper .container-box .company-pages ul li:hover a{
+.page-footer .container .company-pages ul li:hover a{
     color: #15c38c;
     transition: .2s;
 }
 
-.page-footer .container .wrapper .container-box .company-pages ul li:hover .dot{
+.page-footer .container .company-pages ul li:hover .dot{
     background-color: #15c38c;
     transition: .2s;
 }
 
 
-.page-footer .container .wrapper .container-box .company-pages .dot{
+.page-footer .container .company-pages .dot{
     width: 7px;
     height: 7px;
     background-color: #ffffff;
@@ -1067,24 +1039,23 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     transition: .2s;
 }
 
-.page-footer .container .wrapper .container-box .company-pages a:hover .dot{
+.page-footer .container .company-pages a:hover .dot{
     background-color: #15c38c;
 }
 
-
-
-.page-footer .container .wrapper .container-box .gallery{
+.page-footer .container .gallery{
     width: 340px;
 }
 
-.page-footer .container .wrapper .container-box .gallery ul li{
+.page-footer .container .gallery ul li{
     display: inline;
 }
 
-.page-footer .container .wrapper .container-box .gallery img{
+.page-footer .container .gallery img{
     width: 100px;
     object-fit: cover;
     padding: 4px;
+    border-radius: 10px;
 }
 
 .page-footer .page-footer-social-media .circle{

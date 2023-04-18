@@ -1,7 +1,7 @@
+const $pageSliderBox = document.querySelector('.page-content .testimonials .container .page-slider .box')
 
 function tgl() {
-    document.querySelector('.page-content .testimonials .container .wrapper .page-switcher .box').classList.toggle('active');
-
+    $pageSliderBox.classList.toggle('active');
 }
 
-document.querySelector('.page-content .testimonials .container .wrapper .page-switcher .box').addEventListener('click', tgl);
+$pageSliderBox.addEventListener('click', tgl);
