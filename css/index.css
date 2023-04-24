@@ -85,6 +85,12 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     color: #5c5c5c;
     font-size: 16px;
     font-weight: bold;
+    transition: .2s;
+}
+
+.page-header-menu li a:hover{
+    color: #000000;
+    transition: .2s;
 }
 
 .page-header-menu .logo{
@@ -164,7 +170,6 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     background-color: rgb(0, 197, 187);
     box-sizing: border-box;
     border-radius: 4px;
-    
 }
 
 .page-content .company .buttons .our-projects p{
