@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 25%;
-    padding: 126px 674px;
+    padding: 126px 0px;
 }
 
 .page-content .company .container .welcome{
@@ -542,6 +542,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 
 .page-content .statistics .wrapper .cell{
     padding: 30px 0;
+    width: 33.3333%;
 }
 
 .page-content .statistics .wrapper .cell .number{
