@@ -18,8 +18,9 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 /*..........................................................*/
 
 .wrapper{
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 .page-header-info .wrapper{
@@ -81,7 +82,8 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 }
 
 .page-header-menu li a{
-    display: inline-block;
+
+    float: right;
     color: #5c5c5c;
     font-size: 16px;
     font-weight: bold;
@@ -111,13 +113,16 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 
 .page-header-menu .menu{
     display: flex;
-    padding: 3% 0% 3% 24%;
+}
+
+.page-header-menu .wrapper{
+    justify-content: space-between;
+    
 }
 
 .page-header-menu .menu li a{
-    display: inline-block;
-    padding-right: 40px;
     align-items: center;
+    padding: 20px;
 }
 
 /*....................Добро пожаловать....................*/
@@ -231,13 +236,13 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 }
 
 .page-content .services .container-grid .wrapper .cell{
-    width: 375px;
+    width: 31%;
     height: 450px;
     background-color: #084d82;
 }
 
 .page-content .services .container-grid .wrapper .cell img{
-    width: 375px;
+    width: 100%;
     height: 225px;
     object-fit: cover;
 }
@@ -267,8 +272,6 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 
 .page-content .us .container{
     display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     background-color: #efefef;
 }
@@ -287,14 +290,11 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 
 .page-content .us .container-grid .wrapper{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .page-content .us .container-grid .wrapper .cell{
-    display: inline-block;
-    justify-content: center;
-    width: 275px;
+    width: 33.3333%;
+    margin: 0px 13px;
     height: 275px;
     border: 1px #b7b7b7 solid; 
     background-color: #efefef;
@@ -439,16 +439,14 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
     padding-left: 15px;
 }
 
-/*...................Наши проекты...................*/
+/*...................Наши возможности...................*/
 
 .page-content .projects{
     padding: 50px 0 100px 0;
-    position: relative;
 }
 
 .page-content .projects .container{
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -468,22 +466,22 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 }
 
 .page-content .projects .container-grid .wrapper .cell{
-    width: 380px;
+    width: 33.3333%;
+    margin: 20px;
     height: 300px;
     background-color: #084d82;
-    z-index: 50;
 }
 
 .page-content .projects .container-grid .wrapper .cell img{
-    width: 380px;
+    width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
 .page-content .projects .container-grid .wrapper .cell .box{
-    position: absolute;
-    top: 397px;
-    width: 380px;
+    position: relative;
+    top: -50px;
+    width: 100%;
     height: 50px;
     background-color: #084d82c1;
     opacity: 100%;
@@ -492,9 +490,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 }
 
 .page-content .projects .container-grid .wrapper .cell .box:hover{
-    position: absolute;
-    top: 147px;
-    width: 380px;
+    top: -100%;
     height: 300px;
     background-color: #084d82c1;
 }
@@ -537,12 +533,12 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 
 .page-content .statistics .wrapper{
     display: flex;
-    justify-content:space-between;
 }
 
 .page-content .statistics .wrapper .cell{
     padding: 30px 0;
     width: 33.3333%;
+    margin: 0 20px;
 }
 
 .page-content .statistics .wrapper .cell .number{
@@ -568,8 +564,6 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 
 .page-content .news .container{
     display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
@@ -588,12 +582,13 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 }
 
 .page-content .news .container-grid .wrapper .cell{
-    width: 375px;
+    width: 33.3333%;
+    margin: 0 20px;
     background-color: #ffffff;
 }
 
 .page-content .news .container-grid .wrapper .cell img{
-    width: 375px;
+    width: 100%;
     height: 225px;
     object-fit: cover;
 }
@@ -757,7 +752,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 }
 
 .page-content .testimonials .container .cell-left{
-    width: 580px;
+    width: 50%;
     border: 1px solid #a3a3a3;
     display: flex;
     text-align: left;
@@ -771,7 +766,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 }
 
 .page-content .testimonials .container .cell-right{
-    width: 580px;
+    width: 50%;
     border: 1px solid #a3a3a3;
     text-align: right;
     margin-left: 20px;
@@ -913,8 +908,8 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 
 .page-footer .container{
     display: flex;
-    justify-content: center;
-    padding: 40px 0;
+    justify-content: space-between;
+    padding: 40px 30px;
 }
 
 .page-footer .container p{
@@ -934,6 +929,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 .page-footer .container .info{
     display: inline-block;
     align-items: center;
+    width: 25%;
 }
 
 .page-footer .container .info .company a{
@@ -951,7 +947,6 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 }
 
 .page-footer .container .info .purpose{
-    width: 310px;
     padding: 15px 0;
 }
 
@@ -961,7 +956,6 @@ h1, h2, h3, h4, h5, h6, ol, ul, li, a, p{
 
 .page-footer .container .contact-us{
     padding: 23px 0;
-    width: 300px;
 }
 
 .page-footer .container .contact-us a{
